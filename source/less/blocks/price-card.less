@@ -6,16 +6,18 @@
   padding: 30px 50px;
   height: 470px;
 
-  border: 1px red solid;
-  border-radius: 20px;
+  border: 3px solid #68dffd;
+  border-radius: 25px;
+  background-color: white;
 }
 
 .price-card__header {
   display: block;
   margin-bottom: 50px;
+  align-self: center;
 
   font-size: 30px;
-  color: #494949;
+  color: fade(#494949, 80%) ;
   font-weight: 800;
 }
 
@@ -26,6 +28,8 @@
 .price-card__item {
   margin-bottom: 20px;
 
+  color: fade(#3b3838, 75%);
+
   &:last-child {
     margin-bottom: 40px;
   }
@@ -34,6 +38,10 @@
 .price-card--promo {
   height: 570px;
   flex-basis: 325px;
+
+  & .price-card__header {
+    color: #ff6a6d;
+  }
 }
 
 .price-card__price-wrapper {
@@ -41,11 +49,12 @@
 }
 
 .price-card__price {
-  color: #3b3838;
+  color: fade(#3b3838, 75%);
   font-size: 150px;
 }
 
 .price-card__price-period {
+  color: fade(#3b3838, 75%);
   font-size: 30px;
 }
 
@@ -53,4 +62,5 @@
   align-self: center;
 
   font-style: italic;
+  color: fade(#3b3838, 75%);
 }
